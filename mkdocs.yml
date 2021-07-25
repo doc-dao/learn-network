@@ -1,0 +1,5 @@
+site_name: Learn Network
+site_url: http://127.0.0.1:8000
+nav:
+    - Home: index.md
+    - About: about.md
