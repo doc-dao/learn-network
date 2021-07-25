@@ -14,3 +14,10 @@ nav:
     - OVS:
         - Ref: ovs/ref.md
         - DeepDive: ovs/dive.md
+    - Network:
+        - Basic:
+            - TCP: network/basic/tcp.md
+        - Books:
+            - Linux Network Internals:
+                - Notes: network/books/linux-network-internals/notes.md
+                - Functions: network/books/linux-network-internals/interfaces.md
