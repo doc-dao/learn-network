@@ -1,5 +1,16 @@
 site_name: Learn Network
-site_url: http://127.0.0.1:8000
+site_url: https://doc-dao.github.io/
+
+plugins:
+  - search
+
+theme:
+  name: material
+
+
 nav:
     - Home: index.md
     - About: about.md
+    - OVS:
+        - Ref: ovs/ref.md
+        - DeepDive: ovs/dive.md
