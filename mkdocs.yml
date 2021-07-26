@@ -16,7 +16,11 @@ nav:
         - DeepDive: ovs/dive.md
     - Network:
         - Basic:
+            - ALL: network/basic/all.md
+            - IP: network/basic/ip.md
             - TCP: network/basic/tcp.md
+        - Overlay:
+            - VXLAN: network/overlay/vxlan.md
         - Books:
             - Linux Network Internals:
                 - Notes: network/books/linux-network-internals/notes.md
