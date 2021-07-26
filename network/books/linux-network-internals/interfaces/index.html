@@ -305,8 +305,71 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../basic/all/" class="md-nav__link">
+        ALL
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../basic/ip/" class="md-nav__link">
+        IP
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../basic/tcp/" class="md-nav__link">
         TCP
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_2" type="checkbox" id="__nav_4_2" >
+      
+      <label class="md-nav__link" for="__nav_4_2">
+        Overlay
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Overlay" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_2">
+          <span class="md-nav__icon md-icon"></span>
+          Overlay
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../overlay/vxlan/" class="md-nav__link">
+        VXLAN
       </a>
     </li>
   
@@ -328,14 +391,14 @@
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_2" type="checkbox" id="__nav_4_2" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_3" type="checkbox" id="__nav_4_3" checked>
       
-      <label class="md-nav__link" for="__nav_4_2">
+      <label class="md-nav__link" for="__nav_4_3">
         Books
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="Books" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_2">
+        <label class="md-nav__title" for="__nav_4_3">
           <span class="md-nav__icon md-icon"></span>
           Books
         </label>
@@ -351,14 +414,14 @@
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_2_1" type="checkbox" id="__nav_4_2_1" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_3_1" type="checkbox" id="__nav_4_3_1" checked>
       
-      <label class="md-nav__link" for="__nav_4_2_1">
+      <label class="md-nav__link" for="__nav_4_3_1">
         Linux Network Internals
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="Linux Network Internals" data-md-level="3">
-        <label class="md-nav__title" for="__nav_4_2_1">
+        <label class="md-nav__title" for="__nav_4_3_1">
           <span class="md-nav__icon md-icon"></span>
           Linux Network Internals
         </label>
@@ -420,6 +483,13 @@
           <li class="md-nav__item">
   <a href="#netif_rx" class="md-nav__link">
     netif_rx
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#net_rx_action" class="md-nav__link">
+    net_rx_action
   </a>
   
 </li>
@@ -493,6 +563,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#net_rx_action" class="md-nav__link">
+    net_rx_action
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -515,6 +592,19 @@
                 
                 <h2 id="_1">重要接口</h2>
 <h3 id="netif_rx">netif_rx</h3>
+<p>此函数属于驱动与内核的旧接口(非NAPI),主要任务:</p>
+<ul>
+<li>对 <code>sk_buff</code> 的数据结构做一些初始化</li>
+<li>把已经接受的帧存储到 CPU 的私有输入队列，然后触发相关联的软IRQ <code>NET_RX_SOFTIRQ</code> 以通知内核。</li>
+<li>更新相关拥塞登机等统计数据</li>
+</ul>
+<h3 id="net_rx_action">net_rx_action</h3>
+<p>与 <code>NET_RX_SOFTIRQ</code>相关联。浏览列表中处于轮询状态的设备，然后为每个设备调用相关联的<code>poll</code>函数，以处理入口队列中的帧。每次 <code>poll</code>方法启用时，能处理的帧数目都有最大值。如果在其时间片内无法清空队列，就得等下一次。</p>
+<p>注:</p>
+<ul>
+<li>此函数属于 NAPI 相关.</li>
+<li>NAPI 驱动程序必须提供一个 <code>poll</code> 方法</li>
+</ul>
                 
               
               
