@@ -9,14 +9,14 @@
       
       
       
-        <link rel="canonical" href="https://doc-dao.github.io/network/basic/ip/">
+        <link rel="canonical" href="https://doc-dao.github.io/network/basic/datastructures/">
       
       <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.0">
     
     
       
-        <title>IP - Learn Network</title>
+        <title>DataStructures - Learn Network</title>
       
     
     
@@ -63,7 +63,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#ip" class="md-skip">
+        <a href="#data-structure" class="md-skip">
           Skip to content
         </a>
       
@@ -93,7 +93,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              IP
+              DataStructures
             
           </span>
         </div>
@@ -305,11 +305,104 @@
             
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../datastructures/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          DataStructures
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         DataStructures
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ip" class="md-nav__link">
+    IP
+  </a>
+  
+    <nav class="md-nav" aria-label="IP">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#iphdr" class="md-nav__link">
+    iphdr
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tcp" class="md-nav__link">
+    TCP
+  </a>
+  
+    <nav class="md-nav" aria-label="TCP">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tcphdr" class="md-nav__link">
+    tcphdr
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#udp" class="md-nav__link">
+    UDP
+  </a>
+  
+    <nav class="md-nav" aria-label="UDP">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#udphdr" class="md-nav__link">
+    udphdr
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -329,64 +422,11 @@
             
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          IP
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../ip/" class="md-nav__link">
         IP
       </a>
-      
-        
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#flags" class="md-nav__link">
-    Flags
-  </a>
-  
-    <nav class="md-nav" aria-label="Flags">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#dscp" class="md-nav__link">
-    DSCP
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -570,16 +610,56 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#flags" class="md-nav__link">
-    Flags
+  <a href="#ip" class="md-nav__link">
+    IP
   </a>
   
-    <nav class="md-nav" aria-label="Flags">
+    <nav class="md-nav" aria-label="IP">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#dscp" class="md-nav__link">
-    DSCP
+  <a href="#iphdr" class="md-nav__link">
+    iphdr
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tcp" class="md-nav__link">
+    TCP
+  </a>
+  
+    <nav class="md-nav" aria-label="TCP">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tcphdr" class="md-nav__link">
+    tcphdr
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#udp" class="md-nav__link">
+    UDP
+  </a>
+  
+    <nav class="md-nav" aria-label="UDP">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#udphdr" class="md-nav__link">
+    udphdr
   </a>
   
 </li>
@@ -602,11 +682,93 @@
               
                 
                 
-                <h1 id="ip">IP</h1>
-<h2 id="flags">Flags</h2>
-<h3 id="dscp">DSCP</h3>
+                <h1 id="data-structure">Data structure</h1>
+<h2 id="ip">IP</h2>
+<h3 id="iphdr">iphdr</h3>
+<pre><code class="language-c">struct iphdr {
+#if defined(__LITTLE_ENDIAN_BITFIELD)
+    __u8    ihl:4,
+        version:4;
+#elif defined (__BIG_ENDIAN_BITFIELD)
+    __u8    version:4,
+        ihl:4;
+#else
+#error  &quot;Please fix &lt;asm/byteorder.h&gt;&quot;
+#endif
+    __u8    tos;
+    __be16  tot_len;
+    __be16  id;
+    __be16  frag_off;
+    __u8    ttl;
+    __u8    protocol;
+    __sum16 check;
+    __be32  saddr;
+    __be32  daddr;
+    /*The options start here. */
+};
+</code></pre>
+<ul>
+<li><code>iphdr-&gt;ihl</code>: 首部长度(4位):首部长度指的是IP层头部占32 bit字的数目(也就是IP层头部包含多少个4字节 -- 32位),包括任何选项。由于它是一个4比特字段,因此首部最长为60个字节。普通IP数据报(没有任何选择项)字段的值是5 &lt;==&gt; 5 * 32 / 8 = 5 * 4 = 20 Bytes</li>
+</ul>
+<p>Links:</p>
 <ol>
-<li><a href="https://en.wikipedia.org/wiki/Differentiated_services">Differentiated services</a></li>
+<li><a href="https://blog.csdn.net/beginning1126/article/details/14057087">struct iphdr详解</a></li>
+</ol>
+<h2 id="tcp">TCP</h2>
+<h3 id="tcphdr">tcphdr</h3>
+<pre><code class="language-c">struct tcphdr {
+    __be16 source;
+    __be16 dest;
+    __be32 seq;
+    __be32 ack_seq;
+#if defined(__LITTLE_ENDIAN_BITFIELD)
+    __u16   res1:4,
+            doff:4,
+            fin:1,
+            syn:1,
+            rst:1,
+            psh:1,
+            ack:1,
+            urg:1,
+            ece:1,
+            cwr:1;
+#elif defined(__BIG_ENDIAN_BITFIELD)
+    __u16   doff:4,
+            res1:4,
+            cwr:1,
+            ece:1,
+            urg:1,
+            ack:1,
+            psh:1,
+            rst:1,
+            syn:1,
+            fin:1;
+#else
+#error &quot;Adjust your &lt;asm/byteorder.h&gt; defines&quot;
+#endif
+    __be16 window;
+    __be16 check;
+    __be16 urg_ptr;
+};
+</code></pre>
+<p><img alt="tcp header" src="https://img2018.cnblogs.com/blog/1241434/201910/1241434-20191014094711064-1041986148.png" /></p>
+<p>Links:</p>
+<ol>
+<li><a href="https://docs.huihoo.com/doxygen/linux/kernel/3.7/structtcphdr.html">tcphdr</a></li>
+<li><a href="https://www.cnblogs.com/wanghao-boke/p/11669744.html">struct tcphdr解析</a></li>
+</ol>
+<h2 id="udp">UDP</h2>
+<h3 id="udphdr">udphdr</h3>
+<pre><code class="language-c">struct udphdr {
+        __u16   source;
+        __u16   dest;
+        __u16   len;
+        __u16   check;
+ };
+</code></pre>
+<p>Links:</p>
+<ol>
+<li><a href="https://www.cnblogs.com/wanghao-boke/p/11669824.html">struct udphdr</a></li>
 </ol>
                 
               
@@ -627,7 +789,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../all/" class="md-footer__link md-footer__link--prev" aria-label="Previous: ALL" rel="prev">
+        <a href="../../../ovs/dive/" class="md-footer__link md-footer__link--prev" aria-label="Previous: DeepDive" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -636,20 +798,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              ALL
+              DeepDive
             </div>
           </div>
         </a>
       
       
         
-        <a href="../tcp/" class="md-footer__link md-footer__link--next" aria-label="Next: TCP" rel="next">
+        <a href="../all/" class="md-footer__link md-footer__link--next" aria-label="Next: ALL" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              TCP
+              ALL
             </div>
           </div>
           <div class="md-footer__button md-icon">
