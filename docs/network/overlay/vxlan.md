@@ -6,5 +6,6 @@ VXLAN是一种承载协议，定义了MAC-over-UDP的封装方案，由内（inn
 
 ## Intro
 1. [启迪云谈 | VXLAN篇](https://zhuanlan.zhihu.com/p/43731577): 基本介绍加header格式
+2. [知乎-VLAN基础知识](https://zhuanlan.zhihu.com/p/35616289)
 
 
