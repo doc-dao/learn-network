@@ -11,6 +11,8 @@ theme:
 nav:
     - Home: index.md
     - About: about.md
+    - Software:
+        - Flask: softwares/flask.md
     - OVS:
         - Ref: ovs/ref.md
         - DeepDive: ovs/dive.md
@@ -27,3 +29,5 @@ nav:
             - Linux Network Internals:
                 - Notes: network/books/linux-network-internals/notes.md
                 - Functions: network/books/linux-network-internals/interfaces.md
+        - Research:
+            - TCP: network/research/tcp.md

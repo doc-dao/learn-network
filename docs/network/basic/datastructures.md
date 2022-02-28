@@ -86,6 +86,13 @@ Links:
 2. [struct tcphdr解析](https://www.cnblogs.com/wanghao-boke/p/11669744.html)
 
 
+### CONNECTION
+
+Links:
+
+1. [理解TCP序列号（Sequence Number）和确认号（Acknowledgment Number）](https://xzchsia.github.io/2020/08/31/tcp-seq-ack/)
+
+
 ## UDP
 
 ### udphdr
